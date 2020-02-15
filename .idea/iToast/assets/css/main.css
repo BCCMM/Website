@@ -1837,6 +1837,7 @@
 		text-decoration: none;
 		text-transform: uppercase;
 		white-space: nowrap;
+		background-color: white;
 	}
 
 		input[type="submit"].icon,
@@ -1914,7 +1915,7 @@
 	input[type="button"],
 	button,
 	.button {
-		background-color: #f7f7f7;
+		background-color: white;
 		color: #555 !important;
 	}
 
@@ -1973,7 +1974,7 @@
 		input[type="button"].special,
 		button.special,
 		.button.special {
-			background-color: #00cdcf;
+			background-color: white;
 			color: #ffffff !important;
 		}
 
@@ -1982,7 +1983,7 @@
 			input[type="button"].special:hover,
 			button.special:hover,
 			.button.special:hover {
-				background-color: #00e6e9;
+				background-color: white;
 			}
 
 			input[type="submit"].special:active,
@@ -1990,7 +1991,7 @@
 			input[type="button"].special:active,
 			button.special:active,
 			.button.special:active {
-				background-color: #00b4b5;
+				background-color: white;
 			}
 
 /* Form */
@@ -2245,7 +2246,7 @@
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #00cdcf;
+		border-color: #000000;
 		box-shadow: 0 0 0 1px #00cdcf;
 	}
 
@@ -3550,8 +3551,8 @@
 		#banner input[type="button"],
 		#banner button,
 		#banner .button {
-			background-color: #f7f7f7;
-			color: #555 !important;
+			background-color: #000000;
+			color: #000 !important;
 		}
 
 			#banner input[type="submit"]:hover,
@@ -3567,7 +3568,7 @@
 			#banner input[type="button"]:active,
 			#banner button:active,
 			#banner .button:active {
-				background-color: #eaeaea;
+				background-color: #000000;
 			}
 
 			#banner input[type="submit"].alt,
@@ -3609,7 +3610,7 @@
 			#banner input[type="button"].special,
 			#banner button.special,
 			#banner .button.special {
-				background-color: #009a9c;
+				background-color: #000000;
 				color: #fff !important;
 			}
 
@@ -3618,7 +3619,7 @@
 				#banner input[type="button"].special:hover,
 				#banner button.special:hover,
 				#banner .button.special:hover {
-					background-color: #00b4b5;
+					background-color: #000000;
 				}
 
 				#banner input[type="submit"].special:active,
@@ -3626,7 +3627,7 @@
 				#banner input[type="button"].special:active,
 				#banner button.special:active,
 				#banner .button.special:active {
-					background-color: #008183;
+					background-color: #000000;
 				}
 
 		#banner h2 {
