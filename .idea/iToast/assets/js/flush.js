@@ -2,6 +2,12 @@ function flushToast() {
     // alert("Toast is toasting!");
     document.getElementById("flushToast").disabled = 'true';
     document.getElementById("flushtext").innerHTML = "Toasting has begun!";
+
+    const Url='https://google.com';
+    fetch(Url)
+        .then(data=>{return {}})
+        .then(res=>{console.log(res)})
+
     var timeleft = 10;
     var downloadTimer = setInterval(function(){
         if(timeleft <= 0){
@@ -16,27 +22,28 @@ function flushToast() {
         }
         timeleft -= 1;
     }, timeleft * 100)
-
 }
-
-// var request = require('request');
 //
-// request.post(
-//     'http://itoast.xyz',
-//     { json: { key: 'value' } },
-//     function (error, response, body) {
-//         if (!error && response.statusCode == 200) {
-//             console.log(body);
+//
+//
+// function sendPostRequest() {
+//     var request = require('request');
+//     request.post(
+//         'http://itoast.xyz',
+//         { json: { key: 'value' } },
+//         function (error, response, body) {
+//             if (!error && response.statusCode == 200) {
+//                 console.log(body);
+//             }
 //         }
-//     }
-// );
-//
-// var myJSONObject = { ... };
-// request({
-//     url: "http://itoast.xyz",
-//     method: "POST",
-//     json: true,   // <--Very important!!!
-//     body: myJSONObject
-// }, function (error, response, body){
-//     console.log(response);
-// });
+//     )
+//     var myJSONObject = { ... };
+//     request({
+//         url: "http://itoast.xyz",
+//         method: "POST",
+//         json: true,   // <--Very important!!!
+//         body: myJSONObject
+//     }, function (error, response, body){
+//         console.log(response);
+//     })
+// }
