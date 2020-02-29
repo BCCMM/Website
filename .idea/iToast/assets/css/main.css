@@ -2246,7 +2246,7 @@
 
 	input[type="checkbox"]:focus + label:before,
 	input[type="radio"]:focus + label:before {
-		border-color: #000000;
+		border-color: #ffffff;
 		box-shadow: 0 0 0 1px #00cdcf;
 	}
 
@@ -3551,7 +3551,7 @@
 		#banner input[type="button"],
 		#banner button,
 		#banner .button {
-			background-color: #000000;
+			background-color: #ffffff;
 			color: #000 !important;
 		}
 

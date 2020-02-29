@@ -9,19 +9,19 @@
 		<title>iToast</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
+		<script type="text/javascript" src="asset/js/flush.js"></script>
 		<!--[if lte IE 8]><script src="assets/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<!--[if lte IE 9]><link rel="stylesheet" href="assets/css/ie9.css" /><![endif]-->
 	</head>
 	<body>
-
 		<!-- Banner -->
 			<section id="banner">
 				<h2><strong>iToast</strong> makes you toast</h2>
 				<p>Michael Behm, Tom Casavant, Zach Cusick, Milly Mason, Sara Miskus</p>
-				<ul class="actions">
-					<li><a href="#" class="button special">Flush Toast</a></li>
-				</ul>
+				<a href="#one">
+					<input type="button" onclick="flushToast()" href="#one" id="flushToast" value="Flush Toast">
+				</a>
 			</section>
 
 		<!-- One -->
@@ -39,12 +39,12 @@
 						<div class="feature">
 							<i class="fa fa-clock-o"></i>
 							<h3>Count Down</h3>
-							<p>Timer</p>
+							<p id="timer"></p>
 						</div>
 						<div class="feature">
-							<i class="fa fa-smile-o"></i>
-							<h3>Toast is ready!</h3>
-							<p>Enjoy!</p>
+							<i id="doneicon" class="fa fa-frown-o"></i>
+							<h3 id="done1">Waiting for toast!</h3>
+							<p id="done2"></p>
 						</div>
 					</div>
 				</div>
@@ -61,6 +61,7 @@
 			<script src="assets/js/jquery.min.js"></script>
 			<script src="assets/js/skel.min.js"></script>
 			<script src="assets/js/util.js"></script>
+			<script src="assets/js/flush.js"></script>
 			<!--[if lte IE 8]><script src="assets/js/ie/respond.min.js"></script><![endif]-->
 			<script src="assets/js/main.js"></script>
 
