@@ -1,6 +1,7 @@
 function flushToast() {
     // alert("Toast is toasting!");
     document.getElementById("flushToast").disabled = 'true';
+    document.getElementById("flushtext").innerHTML = "Toasting has begun!";
     var timeleft = 10;
     var downloadTimer = setInterval(function(){
         if(timeleft <= 0){
@@ -8,7 +9,7 @@ function flushToast() {
             document.getElementById("done1").innerHTML = "Toast is ready!";
             document.getElementById("done2").innerHTML = "Enjoy!";
             document.getElementById("doneicon").className = "fa fa-smile-o";
-            document.getElementById("timer").innerHTML = "Finished!"
+            document.getElementById("timer").innerHTML = "Finished!";
             document.getElementById("flushToast").disabled = 'false';
         } else {
             document.getElementById("timer").innerHTML = "Your toast will be ready in: " + timeleft + " seconds!";
@@ -17,10 +18,6 @@ function flushToast() {
     }, timeleft * 100)
 
 }
-
-
-
-
 
 // var request = require('request');
 //
