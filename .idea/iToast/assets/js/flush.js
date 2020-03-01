@@ -3,8 +3,14 @@ function flushToast() {
     document.getElementById("flushToast").disabled = 'true';
     document.getElementById("flushtext").innerHTML = "Toasting has begun!";
 
-    const Url='https://google.com';
-    fetch(Url)
+    const Url='https://i-toast.herokuapp.com/flush-toast';
+    const otherPram={
+        headers: {
+            'Access-Control-Allow-Origin': 'http://localhost:63342'
+        },
+        mode: 'no-cors'
+    };
+    fetch(Url, otherPram)
         .then(data=>{return {}})
         .then(res=>{console.log(res)})
 
